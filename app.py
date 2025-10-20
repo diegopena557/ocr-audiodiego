@@ -10,6 +10,18 @@ from PIL import Image
 from gtts import gTTS
 from googletrans import Translator
 
+# --- NUEVA FUNCIÓN ---
+def mostrar_mensaje_interesante():
+    """
+    Muestra un pequeño mensaje animado o de transición antes de desplegar el texto reconocido.
+    """
+    import streamlit as st
+    import time
+
+    mensaje = "💡 Interesante... veamos qué dice 👀"
+    st.info(mensaje)
+    time.sleep(1.5)  # Pausa breve para darle efecto
+
 
 text=" "
 
